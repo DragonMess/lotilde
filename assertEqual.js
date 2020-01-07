@@ -13,7 +13,7 @@
 // // TEST CODE
 // console.assert(sumBuggy(1, 2) === 3); // fails, because bug!
 
-const asserEqual = function(actual,expected){
+const assertEqual = function(actual,expected){
   if(actual===expected){
     console.log(`Assertion Passed: ${actual} === +${expected}`);
   }else {
@@ -21,5 +21,5 @@ const asserEqual = function(actual,expected){
   }
   
 };
-asserEqual("Lighthouse Labs","Bootcamp");
+assertEqual("Lighthouse Labs","Bootcamp");
 //asserEqual(1,1);
