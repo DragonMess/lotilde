@@ -1,19 +1,5 @@
-// const assertEqual = function(actual,expected) {
-//   if (actual === expected) {
-//     console.log(`Assertion Passed: ${actual} === +${expected}`);
-//   } else {
-//     console.log(`Assertion Failed: ${actual} !== ${expected}`);
-//   }
-  
-// };
-// assertEqual();
-// // assertEqual("Lighthouse Labs","Bootcamp");
 
-
-
-
-
-function eqArrays(actual,expected) {
+function assertArrays(actual,expected) {
 
   if (actual.length != expected.length) {
     // not the same qty of elements
@@ -38,5 +24,5 @@ function eqArrays(actual,expected) {
 
 }
 
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 2, 3], [3, 2, 1]);
+assertArrays([1, 2, 3], [1, 2, 3]);
+assertArrays([1, 2, 3], [3, 2, 1]);
