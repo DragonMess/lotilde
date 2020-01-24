@@ -1,27 +1,5 @@
-function assertArrays(actual,expected) {
+const assertArraysEqual = require('./assertArraysEqual');
 
-  if (actual.length != expected.length) {
-    // not the same qty of elements
-    return false;
-
-  } else {
-
-    let i = 0;
-
-    while (i < actual.length) {
-        
-      if (actual[i] !== expected[i]) {
-        return console.log(`Assertion Failed: ${actual} !== ${expected}`)
-
-      } 
-      i++;
-        
-    }return console.log(`Assertion Passed: ${actual} === +${expected}`);
-
-  }
-
-
-}
 const letterPositions = function(sentence) {
   const results = {};
   const sentenceN = sentence.replace(' ','');
@@ -35,4 +13,6 @@ const letterPositions = function(sentence) {
   }
   return console.log(results);
 };
-letterPositions("hellooo fer");
+
+module.export = letterPositions;
+// letterPositions("hellooo fer");

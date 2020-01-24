@@ -21,10 +21,12 @@ const takeUntil = function(array, callback) {
    return array.slice(0,value);
 }
 
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
-const results2 = takeUntil(data2, x => x === ',');
+module.export = takeUntil;
 
-const data2Exp = [ 'I\'ve', 'been', 'to', 'Hollywood' ];
+// const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+// const results2 = takeUntil(data2, x => x === ',');
 
-assertArraysEqual(data2,data2Exp);
-console.log('assertArraysEqual(data2,data2Exp)', assertArraysEqual(results2,data2Exp));
+// const data2Exp = [ 'I\'ve', 'been', 'to', 'Hollywood' ];
+
+// assertArraysEqual(data2,data2Exp);
+// console.log('assertArraysEqual(data2,data2Exp)', assertArraysEqual(results2,data2Exp));
